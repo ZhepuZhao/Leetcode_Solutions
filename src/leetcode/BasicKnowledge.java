@@ -15,6 +15,7 @@ public class BasicKnowledge {
 		System.out.println((char)('A' + 26)); // [ didn't go back to A
 		System.out.println((char) 65); // A
 		System.out.println((char) 66); // B
+		System.out.println('z' - 'a'); // 25
 		
 		// 2. Use StringBulider to append character to string
 		StringBuilder sb = new StringBuilder();
@@ -50,7 +51,7 @@ public class BasicKnowledge {
 		Set<Integer> hashSet = new HashSet<Integer>();
 		hashSet.add(0);
 		hashSet.add(1);
-		Iterator<Integer> iter = hashSet.iterator();
+		Iterator<Integer> iter = hashSet.iterator();	
 		System.out.println(iter.next());
 		System.out.println(iter.next());
 		
@@ -101,7 +102,9 @@ public class BasicKnowledge {
 		System.out.println(bit_a >>>= 2); // 0000 1111
 		System.out.println(bit_b >>>= 2);
 		
-		
+		// 16. treat char as int
+		int[] l = new int[128];
+		l['s']++;
 		
 		
 	}
